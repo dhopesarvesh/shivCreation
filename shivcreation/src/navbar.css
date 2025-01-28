@@ -1,0 +1,92 @@
+/* General Styles for the Navbar */
+.site-navbar {
+    background-color: #333;
+    padding: 10px 0;
+  }
+  
+  .site-logo a {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .site-logo a:hover {
+    color: #f1c40f;
+  }
+  
+  /* Navbar Links - Horizontal Alignment */
+  .site-navigation {
+    display: flex;
+    justify-content: center; /* Centers the links horizontally */
+    align-items: center; /* Vertically aligns items in the center */
+  }
+  
+  .site-navigation a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 15px;
+    margin: 0 10px; /* Spacing between links */
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .site-navigation a:hover {
+    background-color: #444;
+    color: #f1c40f;
+  }
+  
+  /* Mobile Menu Toggle */
+  .site-menu-toggle {
+    display: none; /* Hidden by default on large screens */
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+  }
+  
+  .site-menu-toggle:hover {
+    color: #f1c40f;
+  }
+  
+  /* Mobile Navbar (when toggle is clicked) */
+  .d-none.d-xl-block {
+    display: block;
+  }
+  
+  @media (max-width: 1200px) {
+    .site-navigation {
+      display: none; /* Hide on small screens */
+      width: 100%;
+      text-align: center;
+    }
+  
+    .d-inline-block.d-xl-none {
+      display: inline-block; /* Show hamburger icon */
+    }
+  
+    .site-menu-toggle.active + .site-navigation {
+      display: block; /* Show the menu when active */
+      background-color: #333;
+      padding: 10px 0;
+      position: absolute;
+      top: 40px; /* Adjust according to navbar height */
+      left: 0;
+      right: 0;
+      z-index: 100;
+    }
+  
+    .site-navigation a {
+      display: block;
+      margin: 10px 0;
+      padding: 15px;
+      font-size: 18px;
+    }
+  
+    .site-navigation a:hover {
+      background-color: #444;
+      color: #f1c40f;
+    }
+  }
+  

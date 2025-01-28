@@ -1,0 +1,73 @@
+img {
+    width: 100%;
+    max-width: 1000px;  
+    height: auto;       
+    max-height: 600px;  
+    object-fit: cover;   
+    display: block;      
+    margin: 0 auto;      
+  }
+
+.description {
+    background-color: rgb(255, 255, 255); 
+    padding: 20px 0; 
+  }
+  
+  .description p {
+    color: rgb(0, 0, 0);
+    font-size: 1.1rem;  
+    line-height: 1.6;   
+    max-width: 900px;  
+    margin: 0 auto;    
+    text-align: left;  
+  }
+  
+
+  @media (max-width: 768px) {
+    .description p {
+      font-size: 1rem;  
+      padding: 0 15px;  
+    }
+  }
+
+  
+.section {
+    padding: 60px 20px;           
+    background-color: #f8f6f6;    
+  }
+  
+  /* Container Styling */
+  .container {
+    max-width: 1200px;            
+    margin: 0 auto;               
+    padding: 0 20px;             
+  }
+  
+  /* Mission Content Styling */
+  .mission-content {
+    display: flex;                
+    align-items: center;         
+    justify-content: space-between; 
+    gap: 20px;  
+    text-align: justify;
+    width: [width of img];  
+    display: block;
+    margin: 0 auto;                
+  }
+  
+  /* Image Styling */
+  .mission-image {
+    max-width: 50%;               
+    height: auto;                 
+    border-radius: 8px;          
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+  }
+
+  .mission-text {
+    flex: 1;                      
+    max-width: 45%;               
+    color: #333; 
+    text-align: center;                 
+  }
+
+  
