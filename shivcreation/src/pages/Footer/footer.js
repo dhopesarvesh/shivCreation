@@ -13,21 +13,14 @@ export default function App() {
           <a href='' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='facebook-f' />
           </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='twitter' />
-          </a>
+          
           <a href='' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='google' />
           </a>
           <a href='' className='me-4 text-reset'>
             <MDBIcon color='secondary' fab icon='instagram' />
           </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='linkedin' />
-          </a>
-          <a href='' className='me-4 text-reset'>
-            <MDBIcon color='secondary' fab icon='github' />
-          </a>
+         
         </div>
       </section>
 
@@ -49,22 +42,22 @@ export default function App() {
             <MDBCol md='3' lg='2' xl='2' className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Quick Links</h6>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='/Home' className='text-reset'>
                   Home
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='/Shopall' className='text-reset'>
                   Shop All
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='/About' className='text-reset'>
                   About US
                 </a>
               </p>
               <p>
-                <a href='#!' className='text-reset'>
+                <a href='/Contact' className='text-reset'>
                   Contact US
                 </a>
               </p>
@@ -81,7 +74,7 @@ export default function App() {
                 info@example.com
               </p>
               <p>
-                <MDBIcon color='secondary' icon='phone' className='me-3' /> + 01 234 567 88
+                <MDBIcon color='secondary' icon='phone' className='me-3' /> (+91) XXXXXXXX
               </p>
               
             </MDBCol>

@@ -4,8 +4,10 @@ img {
     height: auto;       
     max-height: 600px;  
     object-fit: cover;   
-    display: block;      
-    margin: 0 auto;      
+    display: flex;      
+    margin: 0 auto;   
+    padding: 10px;   
+    flex-direction: column;
   }
 
 .description {
@@ -45,29 +47,31 @@ img {
   
   /* Mission Content Styling */
   .mission-content {
-    display: flex;                
-    align-items: center;         
-    justify-content: space-between; 
-    gap: 20px;  
-    text-align: justify;
-    width: [width of img];  
-    display: block;
-    margin: 0 auto;                
+    display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
+    gap: 20px; 
   }
   
-  /* Image Styling */
   .mission-image {
-    max-width: 50%;               
-    height: auto;                 
-    border-radius: 8px;          
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+    width: 50%; 
+    height: auto; 
   }
-
+  
   .mission-text {
-    flex: 1;                      
-    max-width: 45%;               
-    color: #333; 
-    text-align: center;                 
+    width: 50%; 
   }
+  
+  .mission-heading {
+    font-size: 2rem; 
+    font-weight: bold;
+  }
+  
+  .mission-description {
+    font-size: 1.2rem; 
+    line-height: 1.6;
+  }
+  
+  
 
   
