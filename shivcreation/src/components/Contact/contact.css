@@ -1,0 +1,103 @@
+/* ContactForm.css */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background-color: #ffffff;
+    padding: 40px;
+  }
+  
+  .form-container {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+  }
+  
+  .form-section {
+    width: 60%;
+  }
+  
+  h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    margin-bottom: 1.5rem;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .input-group {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .input {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-bottom: 2px solid #000;
+    font-size: 1rem;
+    outline: none;
+    background: transparent;
+  }
+  
+  .textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: none;
+    border-bottom: 2px solid #000;
+    font-size: 1rem;
+    outline: none;
+    background: transparent;
+    height: 120px;
+    resize: none;
+  }
+  
+  .button {
+    width: 200px;
+    background-color: #e74c3c;
+    color: white;
+    padding: 0.75rem;
+    border: none;
+    border-radius: 6px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #c0392b;
+  }
+  
+  .text-section {
+    width: 40%;
+    padding-left: 40px;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    color: #4b5563;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .read-more {
+    color: #e74c3c;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .read-more:hover {
+    text-decoration: underline;
+  }
+  

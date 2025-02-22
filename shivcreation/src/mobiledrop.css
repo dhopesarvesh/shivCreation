@@ -1,0 +1,107 @@
+/* Update CSS - Remove mobile-icons related styles */
+.site-navbar nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+  
+  .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+
+  }
+  
+  .hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color:#ecf0f1;
+  }
+  
+  .mobile-sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 250px;
+    background: white;
+    z-index: 1000;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #000;
+  }
+  
+  .mobile-nav-items {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+  }
+  
+  .mobile-nav-items a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.1rem;
+  }
+  .mobile-icons{
+    display: flex;
+    gap: 20px;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .hideonMobile {
+      display: none !important;
+    }
+    
+    .hamburger {
+      display: block;
+    }
+    
+    .icons {
+      display: none;
+    }
+    
+    .logo {
+      position: static;
+      transform: none;
+    }
+  }
+  
+  @media (min-width: 769px) {
+    .mobile-menu {
+      display: none !important;
+    }
+    
+    .site-navbar nav ul {
+      justify-content: center;
+      gap: 25px;
+    }
+    
+    .logo {
+      position: absolute;
+      left: 20px;
+      transform: none;
+    }
+    
+    .icons {
+      position: absolute;
+      right: 20px;
+      display: flex;
+      gap: 20px;
+    }
+  }

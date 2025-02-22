@@ -1,0 +1,393 @@
+/* home.css */
+
+/* General Styling */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: whitesmoke;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1 {
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: bold;
+    
+  }
+  .banner {
+    position: relative;
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.banner-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(0.7); /* Darkens the image slightly for better text visibility */
+}
+
+.banner-content {
+    position: absolute;
+    color: white;
+    text-shadow: 2px 2px 10px rgb(0, 0, 0);
+}
+
+.banner-content h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.banner-content p {
+    font-size: 1.2rem;
+    color: aliceblue;
+}
+
+.banner-content button{
+    
+        background-color: transparent; /* make the button transparent */
+        border: 2px solid #fff; 
+        padding: 10px 20px; 
+        border-radius: 50px;
+        cursor: pointer; 
+        font-size: 16px;
+        color: rgb(255, 255, 255); 
+        
+      
+}
+
+  .title {
+    font-size: "2.5rem";
+    font-weight: "bold";
+  }
+  .subtitle {
+    font-size: "1.2rem",
+  }
+  /* Slider Section */
+  .py-5 {
+    
+    background: whitesmoke;
+    padding: 5px 0;
+    
+  }
+  
+  .py-6 {
+    background: whitesmoke;
+    padding: 60px 0;
+  }
+  .py-7 {
+    background: whitesmoke;
+    padding: 60px 0;
+  }
+  
+  .cardpanel{
+    background: whitesmoke;
+    border: floralwhite;
+  }
+  
+  .sectionname{
+    display: flex;
+    
+    align-items:flex-start ;
+    
+    
+  }
+  
+  .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  
+  .slick-slide {
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .slick-slide:hover {
+    transform: scale(1.05);
+  }
+  
+  .slick-prev,
+  .slick-next {
+    z-index: 100;
+  }
+  
+  /* Card Styling */
+  .slick-slide div {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .MuiCard-root {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .MuiCard-root:hover {
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .MuiCardMedia-root {
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .MuiTypography-h5 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #444;
+  }
+  
+  .MuiTypography-body2 {
+    font-size: 1rem;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+    
+    .py-5 {
+      padding: 40px 0;
+    }
+    
+    .MuiCard-root {
+      max-width: 300px;
+    }
+    
+    .slick-slide {
+      transform: none !important;
+    }
+  }
+  /* Center Title */
+  .slider-container {
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+  }
+  
+  .slider-container h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+  }
+  
+  /* Swiper Horizontal Slider */
+  .mySwiper {
+    width: 100%;
+    max-width: 1000px; /* Adjust max width */
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    position: relative;
+  }
+  
+  /* Ensure Slides Fill Swiper Container */
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    margin-top: 30px;
+  }
+  
+  /* Card Styling */
+  .card {
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    width: 100%;
+    max-width: 300px;
+    margin-left: 10px;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .card-img-top {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  .card-body {
+    
+    padding: 20px;
+    text-align: center;
+
+  }
+  
+  .card-title {
+    font-size: 1.2rem;
+    color: #e74c3c;
+    font-weight: bold;
+  }
+  
+  .card-text {
+    color: #7f8c8d;
+    font-size: 1rem;
+  }
+  
+  /* Custom Navigation Arrows */
+  .custom-prev,
+  .custom-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    background-color: rgba(44, 62, 80, 0.8); /* Dark Gray Background */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 10;
+   
+  }
+  
+  .custom-prev:hover,
+  .custom-next:hover {
+    background-color: #e74c3c; /* Red on hover */
+    transform: translateY(-50%) scale(1.1);
+  }
+  
+  
+  
+  
+  
+  /* Mobile Adjustments */
+  @media (max-width: 768px) {
+    .custom-prev {
+        left: -20px;
+    }
+    
+    .custom-next {
+        right: -30px;
+    }
+
+    .banner{
+        height: 300px;
+
+    }
+    .banner-image{
+        height: 100%;
+    }
+    .mySwiper{
+        height: auto;
+    }
+    .card{
+        margin-bottom: 20px;
+    }
+    .card-img-top{
+        height: 300px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .swiper-slide{
+      margin-left: 10px;
+    }
+    .custom-prev,
+    .custom-next {
+        width: 40px;
+        height: 40px;
+        font-size: 20px;
+    }
+    
+    .custom-prev {
+        left: -20px;
+    }
+    
+    .custom-next {
+        right: -20px;
+    }
+
+    .card-body{
+        margin-left: 10px;
+    }
+    .banner {
+        height: 200px;
+    }
+    .banner-image {
+        height: 100%;
+    }
+    .mySwiper {
+        height: auto;
+    }
+    .card {
+        margin-bottom: 20px;
+    }
+    .card-img-top {
+        height: 300px;
+    }
+  }
+  
+    .shop {
+        padding-top: 5rem;
+        margin-top: 0;
+        margin-left: 50px;
+        margin-bottom: 20px;
+        color: aliceblue;
+    }
+    
+  
+  .cardss {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding:20px;
+    margin-bottom: 30px;
+    background: #7f8c8d;
+  }
+  .enter{
+    
+    background: #7f8c8d;
+  }
+.clickable-card {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.clickable-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+  .MDBCard {
+    width: 300px;
+  }
+  
+  @media (max-width: 768px) {
+    .cardss {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+.imagess{
+    height: 300px;
+    object-fit: cover;
+}
+  

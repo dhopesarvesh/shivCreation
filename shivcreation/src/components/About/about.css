@@ -1,0 +1,25 @@
+.acontainer{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.prangoli{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.prangoli p {
+    width: 60%; 
+    margin: 0 auto; 
+    text-align: center; 
+    font-size: 18px; 
+    line-height: 1.6; 
+    font-family: 'Arial', sans-serif; 
+    color: #333; 
+}

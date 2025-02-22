@@ -1,46 +1,81 @@
-import React from 'react';
-import './navbar.css';
-
-
-
-
+import React, { useState } from "react";
+import "./navbar.css";
+import MobileDropdown from "./mobiledrop";
 
 const Header = () => {
+  // State to track sidebar visibility
+  // State to track sidebar visibility
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
+  // Function to toggle sidebar open/close
+  const toggleSidebar = () => {
+    setSidebarOpen(!sidebarOpen);
+  };
+
+
   return (
-    <header className="site-navbar" role="banner">
-      <div className="container">
-        <div className="row align-items-center">
-          <div className="col-11 col-xl-2">
-            <h1 className="mb-0 site-logo">
-            <a class="navbar-brand" href="#">
-              <img src="" alt="logo-here" width="30" height="24" class="d-inline-block align-text-top" />
-              Shiv's Creations
-            </a>
-            </h1>
-          </div>
 
-          <div className="col-12 col-md-10 d-none d-xl-block">
-            <nav className="site-navigation position-relative text-right" role="navigation">
-             
-              <a href='/home'> Home </a>
-              <a href='/shopall'> Shop All </a>
-              <a href='/about'> About </a>
-              <a href='/contact'> Contact Us</a>
-              
-
-            </nav>
-          </div>
-
-          
-
-          <div className="d-inline-block d-xl-none ml-md-0 mr-auto py-3" style={{ position: 'relative', top: '3px' }}>
-            <a href="#" className="site-menu-toggle js-menu-toggle text-white">
-              <span className="icon-menu h3"></span>
-            </a>
-          </div>
-        </div>
+    <>
+      <div className="announcement">
+        <p>Announcement Here!&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;<a href="image">Full Story</a></p>
       </div>
-    </header>
+      <header className="site-navbar" role="banner">
+        <nav>
+          { }
+
+
+
+          {/* Desktop navigation */}
+          <ul>
+
+            <li className="mobile-menu">
+              <button className="hamburger" onClick={toggleSidebar}>
+                ☰
+              </button>
+            </li>
+            <li className="image">
+            <img src="/assets/logi.png" alt="website-logo"></img>
+              <a href="/home">
+              </a>
+            </li>
+            <li className="hideonMobile">
+              <a href="/home">Home</a>
+            </li>
+            <li className="hideonMobile">
+              <a href="/shopall">Catalog</a>
+            </li>
+            <li className="hideonMobile">
+              <a href="/about">About Us </a>
+            </li>
+            <li className="hideonMobile">
+              <a href="/contact">Contact</a>
+            </li>
+            { }
+
+
+            <li className="icons">
+              <div className="user">
+                <i class="fa-solid fa-user"></i>
+              </div>
+              <div className="search-tool">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </div>
+              <div className="cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+              </div>
+            </li>
+          </ul>
+
+
+        </nav>
+        {sidebarOpen && (
+          <MobileDropdown toggle={toggleSidebar} />
+        )}
+
+        {/* Optionally, you can conditionally render the MobileDropdown component */}
+        {/*sidebarOpen && <MobileDropdown />*/}
+      </header>
+    </>
   );
 };
 
